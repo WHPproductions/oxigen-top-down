@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhev2hx8uhpan"]
+
+[ext_resource type="Texture2D" uid="uid://b7yjnr6nokwho" path="res://scenes/gun/gun.png" id="1_csbbp"]
+[ext_resource type="Script" uid="uid://biyv6shs5236o" path="res://scenes/gun/gun.gd" id="1_fjnj2"]
+
+[node name="Gun" type="Marker2D" unique_id=1467331005]
+script = ExtResource("1_fjnj2")
+
+[node name="Pivot" type="Marker2D" parent="." unique_id=763980116]
+
+[node name="Sprite2D" type="Sprite2D" parent="Pivot" unique_id=75384803]
+position = Vector2(20, 0)
+texture = ExtResource("1_csbbp")

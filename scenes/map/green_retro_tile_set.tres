@@ -1,0 +1,51 @@
+[gd_resource type="TileSet" format=3 uid="uid://clk8bn4hx2vqp"]
+
+[ext_resource type="Texture2D" uid="uid://h1si3evwv1k4" path="res://scenes/map/green_retro_tile_set_sprite.png" id="1_4dimx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3k0m"]
+texture = ExtResource("1_4dimx")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2.7878103, -8, 8, -8, 8, 8, -2.7878103, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 5.8454094, -8, 5.8454094)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.7878094, -8, 3.1475277, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.9622746, -6.9385934, 8, -6.9859557, 8, 8, -7.009638, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -7.0333176, 7.009638, -6.9859557, 6.9149113, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.1475277, -8, 8, -8, 8, 8, -2.9676695, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.7447023, -8, 2.7878094, -8, 3.1475277, 8, -6.564844, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.009638, -8, 8, -8, 8, 7.080681, -7.009638, 7.080681)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 6.9622746, -8, 7.009638, 7.0333185, -8, 7.0333185)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.1475277, -8, 8, -8, 8, 8, -2.9676695, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.384985, 8, -6.384985, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.7878094, -8, 3.1475277, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+
+[resource]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_d3k0m")

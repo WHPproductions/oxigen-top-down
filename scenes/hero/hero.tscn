@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c8j1gr3icxb45" path="res://scenes/hero/hero.gd" id="1_jx46w"]
 [ext_resource type="Texture2D" uid="uid://q4mql58s8vhx" path="res://scenes/hero/hero_sprite.png" id="2_3pgml"]
+[ext_resource type="PackedScene" uid="uid://dhev2hx8uhpan" path="res://scenes/gun/gun.tscn" id="3_3pgml"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tqfqc"]
 atlas = ExtResource("2_3pgml")
@@ -112,3 +113,5 @@ animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=328968238]
 shape = SubResource("CircleShape2D_yjh3g")
+
+[node name="Gun" parent="." unique_id=1494565128 instance=ExtResource("3_3pgml")]
