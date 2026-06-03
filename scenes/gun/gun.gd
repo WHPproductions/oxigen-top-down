@@ -1,11 +1,12 @@
 extends Marker2D
 
-@export var cooldown: float = 0.1
+@export var cooldown: float = 0.5
 
 @onready var bullet_scene: PackedScene = load("res://scenes/bullet/bullet.tscn")
 
 var _is_trigger_held: bool = false
 var _cooldown_remaining: float = 0.0
+@onready var _gun_nuzzle_range: int = $Pivot/Sprite2D.position.x
 
 func _process(delta: float) -> void:
 	# core loop
@@ -31,7 +32,7 @@ func try_fire(target_position: Vector2) -> void:
 	# Direction from the gun to the target.
 	var shoot_direction: Vector2 = target_position - global_position
 	bullet.direction = shoot_direction
-	bullet.global_position = $Pivot/Sprite2D.global_position
+	bullet.position = Vector2.from_angle($Pivot.rotation) * _gun_nuzzle_range
 	bullet.look_at(target_position)
 	add_child(bullet)
 

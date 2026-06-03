@@ -13,3 +13,13 @@ func move_forward(delta: float) -> void:
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	queue_free()
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body is Enemy:
+		var knockback_dir := (body.global_position - global_position).normalized()
+		if knockback_dir == Vector2.ZERO:
+			knockback_dir = direction.normalized()
+		body.damage(1, knockback_dir)
+		queue_free()
+	elif body is StaticBody2D:
+		queue_free()

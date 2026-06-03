@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b4hlgs3lkja66"]
+
+[ext_resource type="Script" uid="uid://bs2h68tl4lmlw" path="res://scenes/gui/gui.gd" id="1_q21vd"]
+[ext_resource type="FontFile" uid="uid://b4t3crkb0vpqn" path="res://scenes/gui/Minecraft.ttf" id="2_x2qsw"]
+
+[node name="Gui" type="CanvasLayer" unique_id=1552166552]
+script = ExtResource("1_q21vd")
+
+[node name="Label" type="Label" parent="." unique_id=664146285]
+offset_right = 107.0
+offset_bottom = 102.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_x2qsw")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
