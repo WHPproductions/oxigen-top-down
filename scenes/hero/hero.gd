@@ -2,8 +2,10 @@ extends CharacterBody2D
 class_name Hero
 
 signal died
+signal health_changed(current_health: int, max_health: int)
 
 @export var health: int = 5
+@export var max_health: int = 5
 @export var speed: float = 200.0
 @export var knockback_strength: float = 300.0
 @export var knockback_decay: float = 150.0
@@ -14,6 +16,8 @@ var _knockback_velocity: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
 	add_to_group("player")
+	max_health = health
+	health_changed.emit(health, max_health)
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -40,6 +44,7 @@ func _physics_process(delta: float) -> void:
 
 func damage(amount: int, knockback_direction: Vector2 = Vector2.ZERO) -> int:
 	health -= amount
+	health_changed.emit(health, max_health)
 	if knockback_direction != Vector2.ZERO:
 		_knockback_velocity = knockback_direction.normalized() * knockback_strength
 	if health <= 0:
