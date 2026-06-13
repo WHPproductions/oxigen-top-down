@@ -1,8 +1,137 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bxx57q5h0xi1c"]
 
-[ext_resource type="Script" path="res://scenes/gui/main_menu.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://b3osqfviq1tcf" path="res://scenes/gui/main_menu.gd" id="1_main"]
+[ext_resource type="FontFile" uid="uid://b4t3crkb0vpqn" path="res://scenes/gui/Minecraft.ttf" id="2_jl0ue"]
 
-[node name="MainMenu" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_diugq"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.15, 0.85, 0.4, 0.12)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15, 0.85, 0.4, 0.5)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oajdi"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.15, 0.85, 0.4, 0.4)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15, 0.85, 0.4, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yrd7a"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.15, 0.85, 0.4, 0.25)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15, 0.85, 0.4, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_une58"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.15, 0.85, 0.4, 0.12)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15, 0.85, 0.4, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plctr"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.85, 0.2, 0.25, 0.12)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.2, 0.25, 0.5)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8u35b"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.85, 0.2, 0.25, 0.4)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.2, 0.25, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jj112"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.85, 0.2, 0.25, 0.25)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.2, 0.25, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cgg5x"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.85, 0.2, 0.25, 0.12)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.2, 0.25, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="MainMenu" type="Control" unique_id=1190451518]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,3 +139,94 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_main")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1220832968]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.04, 0.04, 0.08, 1)
+
+[node name="MenuVBox" type="VBoxContainer" parent="." unique_id=1537221999]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Space1" type="Control" parent="MenuVBox" unique_id=233012897]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+
+[node name="TitleLabel" type="Label" parent="MenuVBox" unique_id=1565333626]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.64766884, 0.5, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0.15, 0.3, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_jl0ue")
+theme_override_font_sizes/font_size = 80
+text = "OXIGEN"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MenuVBox" unique_id=7955474]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.55, 0.65, 1)
+theme_override_colors/font_outline_color = Color(0, 0.05, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_jl0ue")
+theme_override_font_sizes/font_size = 20
+text = "TOP DOWN"
+horizontal_alignment = 1
+
+[node name="Space2" type="Control" parent="MenuVBox" unique_id=1663462155]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="ButtonBox" type="VBoxContainer" parent="MenuVBox" unique_id=1876055753]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="MenuVBox/ButtonBox" unique_id=1675559680]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15, 0.85, 0.4, 0.9)
+theme_override_colors/font_focus_color = Color(0.15, 0.85, 0.4, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_jl0ue")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_diugq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oajdi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yrd7a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_une58")
+text = "PLAY"
+
+[node name="QuitButton" type="Button" parent="MenuVBox/ButtonBox" unique_id=1314241812]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.2, 0.25, 0.9)
+theme_override_colors/font_focus_color = Color(0.85, 0.2, 0.25, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_jl0ue")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_plctr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8u35b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jj112")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cgg5x")
+text = "QUIT"
+
+[node name="Space3" type="Control" parent="MenuVBox" unique_id=1000036065]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VersionLabel" type="Label" parent="MenuVBox" unique_id=146718979]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25, 0.25, 0.35, 1)
+theme_override_fonts/font = ExtResource("2_jl0ue")
+theme_override_font_sizes/font_size = 12
+text = "v1.0"
+horizontal_alignment = 1

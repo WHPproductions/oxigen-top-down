@@ -1,7 +1,221 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://ddebpji1pkael"]
 
-[ext_resource type="Script" path="res://scenes/gui/pause_menu.gd" id="1_pm"]
+[ext_resource type="Script" uid="uid://dty81lq50rc05" path="res://scenes/gui/pause_menu.gd" id="1_pm"]
+[ext_resource type="FontFile" uid="uid://b4t3crkb0vpqn" path="res://scenes/gui/Minecraft.ttf" id="2_1eo1i"]
 
-[node name="PauseMenu" type="CanvasLayer"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ad1fp"]
+content_margin_left = 44.0
+content_margin_top = 32.0
+content_margin_right = 44.0
+content_margin_bottom = 32.0
+bg_color = Color(0.06, 0.06, 0.1, 0.95)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.35, 0.5, 0.6)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_size = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nd73k"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.2, 0.8, 0.5, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2, 0.8, 0.5, 0.4)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpplp"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.2, 0.8, 0.5, 0.35)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2, 0.8, 0.5, 0.4)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eafa3"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.2, 0.8, 0.5, 0.22)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2, 0.8, 0.5, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frono"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.2, 0.8, 0.5, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.2, 0.8, 0.5, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q1iis"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.7, 0.4, 0.4, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.4, 0.4, 0.4)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcr4t"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.7, 0.4, 0.4, 0.35)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.4, 0.4, 0.4)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvopa"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.7, 0.4, 0.4, 0.22)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.4, 0.4, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qvp5l"]
+content_margin_left = 16.0
+content_margin_top = 10.0
+content_margin_right = 16.0
+content_margin_bottom = 10.0
+bg_color = Color(0.7, 0.4, 0.4, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.4, 0.4, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1009521603]
 process_mode = 3
 script = ExtResource("1_pm")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=9074526]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0.04, 0.7)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=304600663]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="PanelContainer" parent="Center" unique_id=1214477062]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ad1fp")
+
+[node name="VBox" type="VBoxContainer" parent="Center/Panel" unique_id=675883124]
+layout_mode = 2
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="PausedTitle" type="Label" parent="Center/Panel/VBox" unique_id=636823943]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.9, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.1, 0.2, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_1eo1i")
+theme_override_font_sizes/font_size = 42
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="Divider" type="ColorRect" parent="Center/Panel/VBox" unique_id=637628902]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+color = Color(0.3, 0.35, 0.5, 0.4)
+
+[node name="Gap" type="Control" parent="Center/Panel/VBox" unique_id=208576346]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+
+[node name="ResumeButton" type="Button" parent="Center/Panel/VBox" unique_id=1062174819]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.8, 0.5, 0.85)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_1eo1i")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_nd73k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kpplp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eafa3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_frono")
+text = "RESUME"
+
+[node name="MenuButton" type="Button" parent="Center/Panel/VBox" unique_id=778379271]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.4, 0.4, 0.85)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_1eo1i")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_q1iis")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rcr4t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kvopa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_qvp5l")
+text = "MAIN MENU"
